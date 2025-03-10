@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es" data-bs-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIMM-Menu</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <style>
+        .parent {
+            display: grid;
+            grid-template-columns: repeat(150px);
+            grid-template-rows: repeat(10, 45px);
+            gap: 20px;
+        }
+
+        .div1,
+        .div2,
+        .div3,
+        .div4,
+        .div5,
+        .div6,
+        .div7 {
+            position: relative;
+            border: 1px solid black;
+            /* Agrega un borde visible a cada div */
+            box-shadow: 5px 5px 15px 15px rgba(255, 255, 255, 0.13);
+            /* Añade una sombra a cada div */
+            display: flex;
+            justify-content: center;
+            /* Alinea horizontalmente al centro */
+            align-items: center;
+            /* Alinea verticalmente al centro */
+            background-color: rgba(0, 0, 0, 0.466);
+            /* Fondo más oscuro */
+            transition: transform .3s ease, background-color .7s ease;
+            border-radius: 10px;
+            transform-style: preserve-3d;
+        }
+
+        .div1 img,
+        .div2 img,
+        .div3 img,
+        .div4 img,
+        .div5 img,
+        .div6 img,
+        .div7 img {
+            max-width: 85%;
+            max-height: 85%;
+            border-radius: 5px;
+            backface-visibility: hidden;
+            position: absolute;
+        }
+
+        .div1 .text,
+        .div2 .text,
+        .div3 .text,
+        .div4 .text,
+        .div5 .text,
+        .div6 .text,
+        .div7 .text {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #fff;
+            color: black;
+            width: 100%;
+            height: 100%;
+            border-radius: 5px;
+            backface-visibility: hidden;
+            transform: rotateY(180deg);
+            position: absolute;
+        }
+
+        .div1:hover,
+        .div2:hover,
+        .div3:hover,
+        .div4:hover,
+        .div5:hover,
+        .div6:hover,
+        .div7:hover {
+            transform: rotateY(180deg);
+        }
+
+        .div1 {
+            grid-column: span 7 / span 7;
+            grid-row: span 2 / span 2;
+        }
+
+        .div2 {
+            grid-column: span 2 / span 2;
+            grid-row: span 6 / span 6;
+            grid-row-start: 3;
+        }
+
+        .div3 {
+            grid-column: span 3 / span 3;
+            grid-row: span 6 / span 6;
+            grid-column-start: 3;
+            grid-row-start: 3;
+        }
+
+        .div4 {
+            grid-column: span 2 / span 2;
+            grid-row: span 3 / span 3;
+            grid-column-start: 6;
+            grid-row-start: 3;
+        }
+
+        .div5 {
+            grid-column: span 2 / span 2;
+            grid-row: span 3 / span 3;
+            grid-column-start: 6;
+            grid-row-start: 6;
+        }
+
+        .div6 {
+            grid-column: span 4 / span 4;
+            grid-row: span 2 / span 2;
+            grid-row-start: 9;
+        }
+
+        .div7 {
+            grid-column: span 3 / span 3;
+            grid-row: span 2 / span 2;
+            grid-column-start: 5;
+            grid-row-start: 9;
+        }
+
+        body {
+            /* background-image: url("blob-scatter-haikei.png"); */
+            display: flex;
+            justify-content: center;
+            /* Centra horizontalmente el contenedor en la página */
+            align-items: center;
+            /* Centra verticalmente el contenedor en la página */
+            height: 100vh;
+            margin: 0;
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="parent">
+            <a class="div1" data-text="Enlaza" target="_blank">
+                <img src="garrita.png   " alt="Imagen 1">
+                <div class="text">text</div>
+            </a>
+            <a class="div2" data-text="SiChat" target="_blank">
+                <img src="garrita.png" alt="Imagen 2">
+                <div class="text">SiChat</div>
+            </a>
+            <a class="div3" data-text="SiMove" target="_blank">
+                <img src="sicurpp.png" alt="Imagen 3">
+                <div class="text">SiMove</div>
+            </a>
+            <a class="div4" data-text="PAC" target="_blank">
+                <img src="public/img/telcel.png" alt="Imagen 4">
+                <div class="text">PAC</div>
+            </a>
+
+            <a class="div5" data-text="SiCurp" target="_blank">
+                <img src="public/img/sicurpp.png" alt="Imagen 5">
+                <div class="text">PAC</div>
+            </a>
+            <a class="div6" data-text="SiNotas" target="_blank">
+                <img src="public/img/sinotas_.png" alt="Imagen 6">
+                <div class="text">PAC</div></a>
+            <a class="div7" data-text="Intranet" target="_blank">
+                <img src="public/img/intraneet.png" alt="Imagen 7">
+                <div class="text">PAC</div>
+            </a>
+        </div>
+    </div>
+
+</body>
+
+</html>
