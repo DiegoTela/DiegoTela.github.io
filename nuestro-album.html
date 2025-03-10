@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="es" data-bs-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nuestro Album</title>
+    <link rel="stylesheet" href="bootstrap.min.css" />
+    <style>
+      /* .parent {
+        display: grid;
+        grid-template-columns: repeat(6750px);
+        grid-template-rows: repeat(10, 100px);
+        gap: 20px;
+      } */
+
+      .parent {
+        display: grid;
+        grid-template-columns: repeat(30fr);
+        grid-template-rows: repeat(75, 1000fr);
+        gap: 20px;
+      }
+
+      .div1,
+      .div2,
+      .div3,
+      .div4,
+      .div5,
+      .div6,
+      .div7,
+      .div8,
+      .div9,
+      .div10,
+      .div11,
+      .div12,
+      .div13,
+      .div14,
+      .div15 {
+        position: relative;
+        border: 1px solid black;
+        box-shadow: 5px 5px 15px 15px rgba(255, 255, 255, 0.13);
+        display: flex;
+        justify-content: center;
+        /* Alinea horizontalmente al centro */
+        align-items: center;
+        /* Alinea verticalmente al centro */
+        background-color: rgba(0, 0, 0, 0.466);
+        /* Fondo más oscuro */
+        transition: transform 0.3s ease, background-color 0.7s ease;
+        border-radius: 10px;
+        transform-style: preserve-3d;
+      }
+
+      .div1 img,
+      .div2 img,
+      .div3 img,
+      .div4 img,
+      .div5 img,
+      .div6 img,
+      .div7 img,
+      .div8 img,
+      .div9 img,
+      .div10 img,
+      .div11 img,
+      .div12 img,
+      .div13 img,
+      .div14 img,
+      .div15 img {
+        max-width: 95%;
+        max-height: 95%;
+        border-radius: 5px;
+        backface-visibility: hidden;
+        position: absolute;
+      }
+
+      .div1 .text,
+      .div2 .text,
+      .div3 .text,
+      .div4 .text,
+      .div5 .text,
+      .div6 .text,
+      .div7 .text,
+      .div8 .text,
+      .div9 .text,
+      .div10 .text,
+      .div11 .text,
+      .div12 .text,
+      .div13 .text,
+      .div14 .text,
+      .div15 .text {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #fff;
+        color: black;
+        width: 100%;
+        height: 100%;
+        border-radius: 5px;
+        backface-visibility: hidden;
+        transform: rotateY(180deg);
+        position: absolute;
+      }
+
+      .div1:hover,
+      .div2:hover,
+      .div3:hover,
+      .div4:hover,
+      .div5:hover,
+      .div6:hover,
+      .div7:hover,
+      .div8:hover,
+      .div9:hover,
+      .div10:hover,
+      .div11:hover,
+      .div12:hover,
+      .div13:hover,
+      .div14:hover,
+      .div15:hover {
+        transform: rotateY(180deg);
+      }
+
+
+
+
+    
+.div1 {
+    grid-row: span 18 / span 18;
+}
+
+.div2 {
+    grid-row: span 15 / span 15;
+}
+
+.div3 {
+    grid-row: span 15 / span 15;
+    grid-column-start: 1;
+    grid-row-start: 19;
+}
+
+.div4 {
+    grid-row: span 18 / span 18;
+    grid-column-start: 2;
+    grid-row-start: 16;
+}
+
+.div5 {
+    grid-column: span 2 / span 2;
+    grid-row: span 6 / span 6;
+    grid-row-start: 34;
+}
+
+.div6 {
+    grid-row: span 15 / span 15;
+    grid-row-start: 40;
+}
+
+.div7 {
+    grid-row: span 18 / span 18;
+    grid-row-start: 40;
+}
+
+.div8 {
+    grid-row: span 18 / span 18;
+    grid-row-start: 55;
+}
+
+.div9 {
+    grid-row: span 15 / span 15;
+    grid-column-start: 2;
+    grid-row-start: 58;
+}
+
+.div10 {
+    grid-column: span 2 / span 2;
+    grid-row: span 6 / span 6;
+    grid-row-start: 73;
+}
+
+.div11 {
+    grid-row: span 18 / span 18;
+    grid-row-start: 79;
+}
+
+.div12 {
+    grid-row: span 15 / span 15;
+    grid-row-start: 79;
+}
+
+.div13 {
+    grid-row: span 18 / span 18;
+    grid-column-start: 2;
+    grid-row-start: 94;
+}
+
+.div14 {
+    grid-row: span 15 / span 15;
+    grid-row-start: 97;
+}
+
+.div15 {
+    grid-column: span 2 / span 2;
+    grid-row: span 6 / span 6;
+    grid-row-start: 112;
+}
+        
+
+      body {
+        /* background-image: url("blob-scatter-haikei.png"); */
+        display: flex;
+        justify-content: center;
+        /* Centra horizontalmente el contenedor en la página */
+        align-items: center;
+        /* Centra verticalmente el contenedor en la página */
+        height: 100%;
+        margin-top: 30px;
+        margin-bottom: 30px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="parent">
+        <a class="div1" data-text="Enlaza" target="_blank">
+          <img src="foto1.jpg" alt="Imagen 1" />
+          <div class="text">love</div>
+        </a>
+        <a class="div2" data-text="SiChat" target="_blank">
+          <img src="foto2.jpg" alt="Imagen 2" />
+          <div class="text">SiChat</div>
+        </a>
+        <a class="div3" data-text="SiMove" target="_blank">
+          <img src="foto1.webp" alt="Imagen 3" />
+          <div class="text">SiMove</div>
+        </a>
+        <a class="div4" data-text="PAC" target="_blank">
+          <img src="foto1.webp" alt="Imagen 4" />
+          <div class="text">foro ejemplo</div>
+        </a>
+        <a class="div5" data-text="SiCurp" target="_blank">
+          <img src="foto5.jpg" alt="Imagen 5" />
+          <div class="text">PAC</div>
+        </a>
+        <a class="div6" data-text="SiNotas" target="_blank">
+          <img src="foto1.webp" alt="Imagen 6" />
+          <div class="text">PAC</div>
+        </a>
+        <a class="div7" data-text="Intranet" target="_blank">
+          <img src="foto1.webp" alt="Imagen 7" />
+          <div class="text">PAC</div>
+        </a>
+        <a class="div8" data-text="Intranet" target="_blank">
+          <img src="foto1.webp" alt="Imagen 8" />
+          <div class="text">PAC</div>
+        </a>
+        <a class="div9" data-text="Intranet" target="_blank">
+          <img src="foto1.webp" alt="Imagen 9" />
+          <div class="text">PAC</div>
+        </a>
+        <a class="div10" data-text="Intranet" target="_blank">
+          <img src="foto1.webp" alt="Imagen 10" />
+          <div class="text">PAC</div>
+        </a>
+        <a class="div11" data-text="Intranet" target="_blank">
+          <img src="foto1.webp" alt="Imagen 11" />
+          <div class="text">PAC</div>
+        </a>
+        <a class="div12" data-text="Intranet" target="_blank">
+          <img src="foto1.webp" alt="Imagen 12" />
+          <div class="text">PAC</div>
+        </a>
+        <a class="div13" data-text="Intranet" target="_blank">
+          <img src="foto1.webp" alt="Imagen 13" />
+          <div class="text">PAC</div>
+        </a>
+        <a class="div14" data-text="Intranet" target="_blank">
+          <img src="foto1.webp" alt="Imagen 14" />
+          <div class="text">PAC</div>
+        </a>
+        <a class="div15" data-text="Intranet" target="_blank">
+          <img src="foto1.webp" alt="Imagen 15" />
+          <div class="text">PAC</div>
+        </a>
+      </div>
+    </div>
+  </body>
+</html>
